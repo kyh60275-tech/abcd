@@ -3,34 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>취미 포트폴리오 | [이름]</title>
-    <!-- Tailwind CSS CDN -->
+    <title>토목공학 포트폴리오 | [이름]</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Pretendard', sans-serif; }
+        body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <nav class="fixed w-full bg-white/95 backdrop-blur-sm z-50 py-4 border-b border-slate-200">
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 py-4 border-b border-slate-200">
         <div class="container mx-auto px-6 flex justify-between items-center">
-            <h1 class="text-xl font-bold tracking-tight text-slate-900">Hobbies</h1>
-            <div class="flex space-x-6 text-sm font-semibold text-slate-600">
-                <a href="#about" class="hover:text-emerald-600 transition">About</a>
-                <a href="#hobbies" class="hover:text-emerald-600 transition">Hobbies</a>
-                <a href="#gallery" class="hover:text-emerald-600 transition">Gallery</a>
-                <a href="#contact" class="hover:text-emerald-600 transition">Contact</a>
+            <h1 class="text-xl font-bold text-slate-900 tracking-tight">Portfolio</h1>
+            <div class="flex space-x-6 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
             </div>
         </div>
     </nav>
 
     <header class="pt-32 pb-20 bg-slate-900 text-white">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4">일상의 조각들을 모으는 <span class="text-emerald-400">[이름]</span>입니다.</h2>
-            <p class="text-lg md:text-xl text-slate-400 mb-8 max-w-2xl mx-auto">바쁜 일상 속에서 제가 좋아하는 것들과 소소한 기록을 나누는 공간입니다.</p>
+            <h2 class="text-5xl font-bold mb-4">안녕하세요, 토목공학도 <span class="text-blue-400">[이름]</span>입니다.</h2>
+            <p class="text-xl text-slate-400 mb-8 max-w-2xl mx-auto">안전하고 효율적인 인프라 구축을 꿈꾸는 예비 토목 엔지니어입니다.</p>
             <div class="flex justify-center space-x-4">
-                <a href="#hobbies" class="bg-emerald-600 px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition">취미 구경하기</a>
+                <a href="#projects" class="bg-blue-600 px-8 py-3 rounded-full hover:bg-blue-700 transition">프로젝트 보기</a>
+                <a href="mailto:your@email.com" class="border border-slate-600 px-8 py-3 rounded-full hover:bg-slate-800 transition">연락하기</a>
             </div>
         </div>
     </header>
@@ -38,60 +38,86 @@
     <section id="about" class="py-20 container mx-auto px-6">
         <h3 class="text-3xl font-bold mb-12 text-center">About Me</h3>
         <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div class="bg-slate-200 h-64 rounded-xl flex items-center justify-center text-slate-500 border border-slate-300">
-                [취미 관련 활동 사진]
+            <div class="bg-slate-200 h-64 rounded-2xl flex items-center justify-center text-slate-500">
+                [증명사진 또는 프로젝트 현장 사진]
             </div>
             <div>
                 <p class="text-lg leading-relaxed mb-6">
-                    저는 무언가에 깊게 빠져있는 시간을 소중하게 생각합니다. 단순히 즐기는 것을 넘어, 
-                    관련된 지식을 쌓고 결과물을 기록하는 과정에서 큰 보람을 느낍니다.
+                    [대학교 이름] 토목공학과를 전공하며 구조설계, 수자원, 지반공학에 대한 깊이 있는 학습을 이어왔습니다. 
+                    단순한 이론 습득에 그치지 않고 실무 CAD 툴과 해석 프로그램을 활용한 설계 프로젝트를 통해 실질적인 엔지니어링 감각을 키웠습니다.
                 </p>
-                <div class="space-y-3">
-                    <p>📸 <strong>현재의 관심사:</strong> [예: 풍경 사진 촬영]</p>
-                    <p>🎯 <strong>목표:</strong> [예: 개인 사진전 열어보기]</p>
-                    <p>🌿 <strong>철학:</strong> "지속 가능한 즐거움"</p>
-                </div>
+                <ul class="space-y-2">
+                    <li class="flex items-center">✅ [자격증 1: 토목기사 등]</li>
+                    <li class="flex items-center">✅ [기타 자격증 또는 어학 점수]</li>
+                    <li class="flex items-center">✅ [공모전/대외활동 이력]</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section id="hobbies" class="py-20 bg-white">
+    <section id="skills" class="py-20 bg-white">
         <div class="container mx-auto px-6">
-            <h3 class="text-3xl font-bold mb-12 text-center">Hobbies</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="p-6 bg-emerald-50 rounded-xl border border-emerald-100">
-                    <h4 class="font-bold mb-2 text-emerald-800">사진 촬영</h4>
-                    <p class="text-sm text-slate-600">빛과 구도를 통해 일상을 특별하게 기록합니다.</p>
+            <h3 class="text-3xl font-bold mb-12 text-center">Technical Skills</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Skill Card -->
+                <div class="p-6 border rounded-xl hover:shadow-lg transition">
+                    <h4 class="font-bold mb-2">설계/도면</h4>
+                    <p class="text-sm text-slate-600">AutoCAD, Civil 3D, Revit</p>
                 </div>
-                <div class="p-6 bg-emerald-50 rounded-xl border border-emerald-100">
-                    <h4 class="font-bold mb-2 text-emerald-800">등산</h4>
-                    <p class="text-sm text-slate-600">정상에서 마주하는 성취감과 자연의 웅장함을 즐깁니다.</p>
+                <div class="p-6 border rounded-xl hover:shadow-lg transition">
+                    <h4 class="font-bold mb-2">구조/해석</h4>
+                    <p class="text-sm text-slate-600">SAP2000, MIDAS</p>
                 </div>
-                <div class="p-6 bg-emerald-50 rounded-xl border border-emerald-100">
-                    <h4 class="font-bold mb-2 text-emerald-800">독서</h4>
-                    <p class="text-sm text-slate-600">지식을 탐구하고 세상을 보는 시야를 넓힙니다.</p>
+                <div class="p-6 border rounded-xl hover:shadow-lg transition">
+                    <h4 class="font-bold mb-2">오피스/기타</h4>
+                    <p class="text-sm text-slate-600">MS Office (Excel, PPT), HEC-RAS</p>
                 </div>
-                <div class="p-6 bg-emerald-50 rounded-xl border border-emerald-100">
-                    <h4 class="font-bold mb-2 text-emerald-800">코딩</h4>
-                    <p class="text-sm text-slate-600">상상을 현실적인 프로젝트로 구현하는 즐거움.</p>
+                <div class="p-6 border rounded-xl hover:shadow-lg transition">
+                    <h4 class="font-bold mb-2">역량</h4>
+                    <p class="text-sm text-slate-600">도면 해독, 공정 관리, 현장 조사</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="gallery" class="py-20 container mx-auto px-6">
-        <h3 class="text-3xl font-bold mb-12 text-center">Gallery</h3>
-        <div class="grid md:grid-cols-3 gap-6">
-            <!-- Gallery Items -->
-            <div class="bg-slate-200 h-64 rounded-xl overflow-hidden shadow-sm"></div>
-            <div class="bg-slate-200 h-64 rounded-xl overflow-hidden shadow-sm"></div>
-            <div class="bg-slate-200 h-64 rounded-xl overflow-hidden shadow-sm"></div>
+    <section id="projects" class="py-20 container mx-auto px-6">
+        <h3 class="text-3xl font-bold mb-12 text-center">Projects</h3>
+        <div class="space-y-8">
+            <!-- Project 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                <h4 class="text-2xl font-bold mb-2">[프로젝트명: 예) 교량 설계 최적화 프로젝트]</h4>
+                <p class="text-blue-600 font-medium mb-4">[202X.0X - 202X.0X] | [사용 툴: AutoCAD, SAP2000]</p>
+                <p class="text-slate-600 mb-4">
+                    프로젝트 내용 요약: 주어진 부하 조건에서 구조적 안정성을 확보하면서도 경제적인 단면을 설계했습니다. 
+                    구조 해석 소프트웨어를 활용하여 변위 및 응력을 검증하고 상세도면을 작성하였습니다.
+                </p>
+                <div class="flex gap-2">
+                    <span class="bg-slate-100 px-3 py-1 rounded-full text-xs">#구조설계</span>
+                    <span class="bg-slate-100 px-3 py-1 rounded-full text-xs">#CAD도면작성</span>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                <h4 class="text-2xl font-bold mb-2">[프로젝트명: 예) 지반 조사 및 옹벽 설계]</h4>
+                <p class="text-blue-600 font-medium mb-4">[202X.0X - 202X.0X]</p>
+                <p class="text-slate-600 mb-4">
+                    프로젝트 내용 요약: 현장 지반 데이터를 분석하여 옹벽의 안정성을 계산하고 설계도서를 작성하였습니다.
+                </p>
+                <div class="flex gap-2">
+                    <span class="bg-slate-100 px-3 py-1 rounded-full text-xs">#지반공학</span>
+                    <span class="bg-slate-100 px-3 py-1 rounded-full text-xs">#설계도서작성</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer id="contact" class="py-12 bg-slate-900 text-white text-center">
-        <p class="mb-4">Contact: yourname@email.com</p>
-        <p class="text-slate-500 text-xs">© 2026 [이름]. All rights reserved.</p>
+    <footer id="contact" class="py-20 bg-slate-900 text-white text-center">
+        <h3 class="text-3xl font-bold mb-8">Contact</h3>
+        <p class="mb-4">새로운 인프라를 함께 만들어갈 준비가 되었습니다.</p>
+        <p class="text-blue-400 text-lg font-semibold mb-8">email: yourname@email.com</p>
+        <div class="text-slate-500 text-sm">
+            © 2026 [이름] Civil Engineering Portfolio. All rights reserved.
+        </div>
     </footer>
 
 </body>
