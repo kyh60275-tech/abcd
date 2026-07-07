@@ -4,120 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>토목공학 포트폴리오 | [이름]</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Pretendard', sans-serif; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 py-4 border-b border-slate-200">
+    <!-- 내비게이션 -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm z-50 py-4 border-b border-slate-200">
         <div class="container mx-auto px-6 flex justify-between items-center">
-            <h1 class="text-xl font-bold text-slate-900 tracking-tight">Portfolio</h1>
-            <div class="flex space-x-6 text-sm font-medium">
+            <h1 class="text-xl font-bold tracking-tight text-slate-900">Portfolio</h1>
+            <div class="flex space-x-6 text-sm font-semibold text-slate-600">
                 <a href="#about" class="hover:text-blue-600 transition">About</a>
                 <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
                 <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
                 <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+                <a href="https://padlet.com/kyh60275/padlet-zmj08gwb84ml009i" target="_blank" class="text-blue-600 hover:text-blue-800 transition">방명록</a>
             </div>
         </div>
     </nav>
 
+    <!-- 히어로 섹션 -->
     <header class="pt-32 pb-20 bg-slate-900 text-white">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-5xl font-bold mb-4">안녕하세요, 토목공학도 <span class="text-blue-400">[이름]</span>입니다.</h2>
-            <p class="text-xl text-slate-400 mb-8 max-w-2xl mx-auto">안전하고 효율적인 인프라 구축을 꿈꾸는 예비 토목 엔지니어입니다.</p>
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">안녕하세요, 토목공학도 <span class="text-blue-400">[이름]</span>입니다.</h2>
+            <p class="text-lg md:text-xl text-slate-400 mb-8 max-w-2xl mx-auto">안전하고 효율적인 인프라 구축을 꿈꾸는 예비 토목 엔지니어입니다.</p>
             <div class="flex justify-center space-x-4">
-                <a href="#projects" class="bg-blue-600 px-8 py-3 rounded-full hover:bg-blue-700 transition">프로젝트 보기</a>
-                <a href="mailto:your@email.com" class="border border-slate-600 px-8 py-3 rounded-full hover:bg-slate-800 transition">연락하기</a>
+                <a href="#projects" class="bg-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">프로젝트 보기</a>
+                <a href="mailto:your@email.com" class="border border-slate-600 px-6 py-3 rounded-lg font-medium hover:bg-slate-800 transition">연락하기</a>
             </div>
         </div>
     </header>
 
+    <!-- About 섹션 -->
     <section id="about" class="py-20 container mx-auto px-6">
         <h3 class="text-3xl font-bold mb-12 text-center">About Me</h3>
         <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div class="bg-slate-200 h-64 rounded-2xl flex items-center justify-center text-slate-500">
-                [증명사진 또는 프로젝트 현장 사진]
+            <div class="bg-slate-200 h-64 rounded-xl flex items-center justify-center text-slate-500 border border-slate-300">
+                [증명사진 영역]
             </div>
             <div>
                 <p class="text-lg leading-relaxed mb-6">
                     [대학교 이름] 토목공학과를 전공하며 구조설계, 수자원, 지반공학에 대한 깊이 있는 학습을 이어왔습니다. 
-                    단순한 이론 습득에 그치지 않고 실무 CAD 툴과 해석 프로그램을 활용한 설계 프로젝트를 통해 실질적인 엔지니어링 감각을 키웠습니다.
+                    이론적 토대를 바탕으로 CAD 및 해석 프로그램을 활용한 실무 역량을 키우고 있습니다.
                 </p>
-                <ul class="space-y-2">
-                    <li class="flex items-center">✅ [자격증 1: 토목기사 등]</li>
-                    <li class="flex items-center">✅ [기타 자격증 또는 어학 점수]</li>
-                    <li class="flex items-center">✅ [공모전/대외활동 이력]</li>
-                </ul>
+                <div class="space-y-3">
+                    <p>✅ <strong>자격증:</strong> 토목기사 (준비중/취득)</p>
+                    <p>✅ <strong>어학:</strong> [점수 입력]</p>
+                    <p>✅ <strong>활동:</strong> [대외활동 및 공모전]</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Skills 섹션 -->
     <section id="skills" class="py-20 bg-white">
         <div class="container mx-auto px-6">
-            <h3 class="text-3xl font-bold mb-12 text-center">Technical Skills</h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <!-- Skill Card -->
-                <div class="p-6 border rounded-xl hover:shadow-lg transition">
-                    <h4 class="font-bold mb-2">설계/도면</h4>
+            <h3 class="text-3xl font-bold mb-12 text-center">Skills</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-6 bg-slate-50 rounded-xl border border-slate-100">
+                    <h4 class="font-bold mb-2 text-blue-600">설계/도면</h4>
                     <p class="text-sm text-slate-600">AutoCAD, Civil 3D, Revit</p>
                 </div>
-                <div class="p-6 border rounded-xl hover:shadow-lg transition">
-                    <h4 class="font-bold mb-2">구조/해석</h4>
+                <div class="p-6 bg-slate-50 rounded-xl border border-slate-100">
+                    <h4 class="font-bold mb-2 text-blue-600">구조/해석</h4>
                     <p class="text-sm text-slate-600">SAP2000, MIDAS</p>
                 </div>
-                <div class="p-6 border rounded-xl hover:shadow-lg transition">
-                    <h4 class="font-bold mb-2">오피스/기타</h4>
-                    <p class="text-sm text-slate-600">MS Office (Excel, PPT), HEC-RAS</p>
+                <div class="p-6 bg-slate-50 rounded-xl border border-slate-100">
+                    <h4 class="font-bold mb-2 text-blue-600">오피스/기타</h4>
+                    <p class="text-sm text-slate-600">Excel, PPT, HEC-RAS</p>
                 </div>
-                <div class="p-6 border rounded-xl hover:shadow-lg transition">
-                    <h4 class="font-bold mb-2">역량</h4>
+                <div class="p-6 bg-slate-50 rounded-xl border border-slate-100">
+                    <h4 class="font-bold mb-2 text-blue-600">역량</h4>
                     <p class="text-sm text-slate-600">도면 해독, 공정 관리, 현장 조사</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Projects 섹션 -->
     <section id="projects" class="py-20 container mx-auto px-6">
         <h3 class="text-3xl font-bold mb-12 text-center">Projects</h3>
-        <div class="space-y-8">
-            <!-- Project 1 -->
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-                <h4 class="text-2xl font-bold mb-2">[프로젝트명: 예) 교량 설계 최적화 프로젝트]</h4>
-                <p class="text-blue-600 font-medium mb-4">[202X.0X - 202X.0X] | [사용 툴: AutoCAD, SAP2000]</p>
-                <p class="text-slate-600 mb-4">
-                    프로젝트 내용 요약: 주어진 부하 조건에서 구조적 안정성을 확보하면서도 경제적인 단면을 설계했습니다. 
-                    구조 해석 소프트웨어를 활용하여 변위 및 응력을 검증하고 상세도면을 작성하였습니다.
-                </p>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+                <h4 class="text-xl font-bold mb-2">[프로젝트 명]</h4>
+                <p class="text-blue-600 text-sm font-semibold mb-4">[202X.0X - 202X.0X]</p>
+                <p class="text-slate-600 text-sm mb-4">프로젝트 상세 내용을 이곳에 작성하세요. 어떤 문제를 정의했고, 어떤 기술을 사용하여 해결했는지 서술하면 좋습니다.</p>
                 <div class="flex gap-2">
-                    <span class="bg-slate-100 px-3 py-1 rounded-full text-xs">#구조설계</span>
-                    <span class="bg-slate-100 px-3 py-1 rounded-full text-xs">#CAD도면작성</span>
-                </div>
-            </div>
-            <!-- Project 2 -->
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-                <h4 class="text-2xl font-bold mb-2">[프로젝트명: 예) 지반 조사 및 옹벽 설계]</h4>
-                <p class="text-blue-600 font-medium mb-4">[202X.0X - 202X.0X]</p>
-                <p class="text-slate-600 mb-4">
-                    프로젝트 내용 요약: 현장 지반 데이터를 분석하여 옹벽의 안정성을 계산하고 설계도서를 작성하였습니다.
-                </p>
-                <div class="flex gap-2">
-                    <span class="bg-slate-100 px-3 py-1 rounded-full text-xs">#지반공학</span>
-                    <span class="bg-slate-100 px-3 py-1 rounded-full text-xs">#설계도서작성</span>
+                    <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded text-xs font-medium">#구조설계</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="py-20 bg-slate-900 text-white text-center">
-        <h3 class="text-3xl font-bold mb-8">Contact</h3>
-        <p class="mb-4">새로운 인프라를 함께 만들어갈 준비가 되었습니다.</p>
-        <p class="text-blue-400 text-lg font-semibold mb-8">email: yourname@email.com</p>
-        <div class="text-slate-500 text-sm">
-            © 2026 [이름] Civil Engineering Portfolio. All rights reserved.
-        </div>
+    <!-- Footer -->
+    <footer id="contact" class="py-12 bg-slate-900 text-white text-center">
+        <p class="mb-4">Contact: yourname@email.com</p>
+        <p class="text-slate-500 text-xs">© 2026 [이름]. All rights reserved.</p>
     </footer>
 
 </body>
